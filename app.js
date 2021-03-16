@@ -58,3 +58,19 @@ searchBar.addEventListener('keyup', function(e){
       }
     });
   });
+
+  //tabbed content
+  const tabs = document.querySelector('.tabs')
+  const panel = document.querySelectorAll('.panel');
+  tabs.addEventListener('click', function(e){
+  if(e.target.tagname == 'LI'){
+    const targetPanel = document.querySelector(e.target.dataset.target);
+    panel.forEach(function(panel){
+      if (panel == targetpanel){
+        panel.classList.add('active');
+      } else {
+        panel.classList.remove('active');
+      }
+    })
+  }
+})
