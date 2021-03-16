@@ -1,3 +1,5 @@
+document.addEventListener('DOMcontentLoarded')
+
 const list = document.querySelector('#book-list ul');
 
 //delete books
